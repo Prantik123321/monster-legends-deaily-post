@@ -1,15 +1,15 @@
 /* General body styling */
 body {
-  font-family: 'Poppins', sans-serif; /* Use Google Fonts for a modern look */
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9; /* Light background for a clean design */
-  color: #333; /* Neutral text color */
+  background: #f9f9f9;
+  color: #333;
 }
 
 /* Header section */
 header {
-  background-color: #0044cc; /* Professional blue */
+  background-color: #0044cc;
   color: white;
   padding: 15px 20px;
   text-align: center;
@@ -19,7 +19,6 @@ header {
 header h1 {
   margin: 0;
   font-size: 1.8rem;
-  letter-spacing: 1px;
 }
 
 /* Main section */
@@ -36,17 +35,14 @@ main {
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 15px;
   margin-bottom: 30px;
 }
 
-input[type="file"] {
+input[type="text"], input[type="file"] {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
 }
 
 button {
@@ -63,32 +59,18 @@ button:hover {
   background-color: #0033a0;
 }
 
-/* Image feed section */
+/* Image feed */
 #image-feed {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
-#image-feed img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#image-feed img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-/* Post container styling */
 .post-container {
   background: #fff;
   padding: 15px;
-  margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
 }
 
 .post-container h3 {
@@ -103,16 +85,13 @@ button:hover {
 }
 
 .delete-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: #e74c3c;
-  color: #fff;
-  border: none;
+  margin-top: 10px;
   padding: 5px 10px;
+  background: #e74c3c;
+  color: white;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .delete-btn:hover {
