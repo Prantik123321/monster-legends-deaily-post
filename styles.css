@@ -1,32 +1,83 @@
+/* General body styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif; /* Use Google Fonts for a modern look */
   margin: 0;
   padding: 0;
+  background: #f9f9f9; /* Light background for a clean design */
+  color: #333; /* Neutral text color */
 }
+
+/* Header section */
 header {
-  text-align: center;
-  background-color: #6200ea;
+  background-color: #0044cc; /* Professional blue */
   color: white;
-  padding: 10px 0;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* Main section */
 main {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Form styling */
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  gap: 15px;
+  margin-bottom: 30px;
 }
-button {
-  margin-top: 10px;
+
+input[type="file"] {
   padding: 10px;
-  background-color: #03dac5;
-  border: none;
-  color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
   cursor: pointer;
+  width: 100%;
 }
+
+button {
+  padding: 10px 20px;
+  background-color: #0044cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0033a0;
+}
+
+/* Image feed section */
+#image-feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
 #image-feed img {
-  max-width: 100%;
-  margin: 10px 0;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#image-feed img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
